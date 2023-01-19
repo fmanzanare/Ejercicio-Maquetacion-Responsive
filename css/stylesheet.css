@@ -1,0 +1,80 @@
+
+/* Ejecuta siempre */
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+h2 {
+	color: brown;
+}
+
+video, img {
+	width: 100%;
+	height: 40%;
+}
+
+p {
+	font-size: 14px;
+}
+
+header, footer {
+	background-color: orangered;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 2%;
+}
+
+footer {
+	padding: 1%;
+	font-weight: normal;
+}
+
+.firstRow, .secondRow {
+	width: 90%;
+	margin: 1em auto;
+}
+
+#cruzRoja, #puertaAlcala, #fuenteCibeles, #palacioCristal {
+	margin: 1em
+}
+
+/* Ejecuta cuando la pantalla tenga más de 1000px */
+@media screen and (min-width: 1000px) {
+	.firstRow, .secondRow {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.firstRow div div, .secondRow div div {
+		margin-left: 1em;
+	}
+
+	#cruzRoja, #puertaAlcala, #fuenteCibeles, #palacioCristal {
+		display: flex;
+	}
+
+	video, img {
+		width: 55%;
+		height: 40%;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}
+
+/* Ejecuta cuando la pantalla está entre 600px y 999px */
+@media screen and (min-width: 600px) and (max-width: 999px) {
+	.firstRow, .secondRow {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+
